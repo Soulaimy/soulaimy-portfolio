@@ -587,42 +587,67 @@ CV PAGE=========================*/
     color: #94a3b8;
 }
 
+
 /* =========================
-   PROJECTS
+   PROJECTS PAGE
 ========================= */
+/* =========================
+   PROJECTS PAGE
+========================= */
+
+.projects-header {
+    margin-bottom: 60px;
+}
+
+.projects-header h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.projects-header p {
+    color: #b3b3b3;
+    max-width: 700px;
+    line-height: 1.7;
+}
+
+.project-category {
+    margin-bottom: 70px;
+}
+
+.category-title {
+    margin-bottom: 30px;
+}
+
+.category-title h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.category-title p {
+    color: #9ca3af;
+}
 
 .projects-grid {
     display: grid;
-
-    grid-template-columns:
-        repeat(auto-fit, minmax(320px, 1fr));
-
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     gap: 30px;
 }
 
 .project-card {
     background: #111827;
-
-    border: 1px solid #1e293b;
-
-    border-radius: 25px;
-
+    border: 1px solid #1f2937;
+    border-radius: 20px;
     overflow: hidden;
-
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 .project-card:hover {
     transform: translateY(-8px);
-
-    border-color: #2563eb;
 }
 
-.project-card img {
+.project-image img {
     width: 100%;
-
-    height: 220px;
-
+    height: 230px;
     object-fit: cover;
 }
 
@@ -630,31 +655,84 @@ CV PAGE=========================*/
     padding: 25px;
 }
 
+.project-content h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.project-content p {
+    color: #b3b3b3;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.project-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.project-stack span {
+    background: #1f2937;
+    padding: 8px 14px;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+.project-buttons {
+    display: flex;
+    gap: 15px;
+}
+
 /* =========================
    RESPONSIVE
 ========================= */
 
-@media(max-width:900px) {
+
+@media screen and (max-width: 768px) {
+
+    body {
+        flex-direction: column;
+    }
 
     .sidebar {
-        display: none;
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 20px;
+    }
+
+    .profile {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .profile img {
+        width: 90px;
+        height: 90px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav a {
+        padding: 10px 15px;
+        font-size: 14px;
     }
 
     .main-content {
         margin-left: 0;
-
+        width: 100%;
         padding: 25px;
     }
 
-    .hero-card {
-        padding: 40px;
+    .projects-grid {
+        grid-template-columns: 1fr;
     }
 
-    .hero-card h1 {
-        font-size: 45px;
-    }
-
-    .section h2 {
-        font-size: 32px;
-    }
 }
