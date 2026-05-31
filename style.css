@@ -591,9 +591,6 @@ CV PAGE=========================*/
 /* =========================
    PROJECTS PAGE
 ========================= */
-/* =========================
-   PROJECTS PAGE
-========================= */
 
 .projects-header {
     margin-bottom: 60px;
@@ -692,6 +689,114 @@ CV PAGE=========================*/
     display: flex;
     gap: 15px;
     margin-top: auto;
+}
+
+/* =========================
+   TOOLS PAGE
+========================= */
+
+.tools-header {
+    margin-bottom: 60px;
+}
+
+.tools-header h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.tools-header p {
+    color: #b3b3b3;
+    line-height: 1.7;
+    max-width: 700px;
+}
+
+.tools-category {
+    margin-bottom: 60px;
+}
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.tool-card {
+    background: #111827;
+    border: 1px solid #1f2937;
+    border-radius: 18px;
+    padding: 25px;
+    transition: 0.3s ease;
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+}
+
+.tool-card h3 {
+    margin-bottom: 12px;
+}
+
+.tool-card p {
+    color: #b3b3b3;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   CERTIFICATIONS PAGE
+========================= */
+
+.certifications-header {
+    margin-bottom: 60px;
+}
+
+.certifications-header h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.certifications-header p {
+    max-width: 700px;
+    line-height: 1.7;
+    color: #b3b3b3;
+}
+
+.certification-category {
+    margin-bottom: 60px;
+}
+
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.certification-card {
+    background: #111827;
+    border: 1px solid #1f2937;
+    border-radius: 18px;
+    padding: 25px;
+    transition: 0.3s ease;
+}
+
+.certification-card:hover {
+    transform: translateY(-5px);
+}
+
+.certification-card h3 {
+    margin-bottom: 10px;
+}
+
+.cert-date {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #60a5fa;
+    font-size: 14px;
+}
+
+.certification-card p {
+    color: #b3b3b3;
+    line-height: 1.7;
 }
 
 /* =========================
