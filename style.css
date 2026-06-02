@@ -799,6 +799,18 @@ CV PAGE=========================*/
     line-height: 1.7;
 }
 
+.cert-img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.cert-img:hover {
+    transform: scale(1.05);
+}
+
 /* =========================
    PROJECT DETAILS
 ========================= */
